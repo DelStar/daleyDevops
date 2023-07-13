@@ -1,7 +1,7 @@
 # Terraform and Ansible
 I have used Terraform as an Infrastructure as code (IaC) tool to provision my infrastructure on AWS. Provisioned infrastructure includes;
 VPCs, EKS Clusters, Private and Public subnets, Internet Gateway, Routing Tables, SECURITY GROUP, etc.
-https://github.com/WinifredZenabuin/UnityProject/blob/master/CI-CD%20Intergration.JPG
+
 # EKS Getting Started Guide Configuration
 
 This is the full configuration from https://www.terraform.io/docs/providers/aws/guides/eks-getting-started.html
