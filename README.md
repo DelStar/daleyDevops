@@ -17,12 +17,12 @@ terraform apply
 terraform destory
 
 # Jenkins
-Jenkins will enable us to achieve Continuos Integration and Continuous Deployment. Our Jenkins pipeline-script  will ensure once the application is developed or modified it is automatically build using maven, tested using selenium, validated using SonarQube. The build artifacts will be uploaded to Nexus Private aritifact repository. 
+Jenkins will enable us to achieve Continuous Integration and Continuous Deployment. Our Jenkins pipeline script  will ensure once the application is developed or modified it is automatically built using maven, tested using Selenium, validated using SonarQube. The build artifacts will be uploaded to Nexus Private aritifact repository. 
 # GitHub
-The scripts used for this project can be clone from https://github.com/WinifredZenabuin/UnityProject.
-I also confihured github-webhook so that ounce the source code is modified jenkins will srtigger a build.  
+
+I also configured github-webhook so that once the source code is modified jenkins will srtigger a build.  
 # Dockerfile
-we are also using the created package (artifacts) to create a docker imgae for our application. Here docker is used for containerisation.  
+we are also using the created package (artifacts) to create a docker image for our application. Here docker is used for containerization.  
 ```docker
 docker build -t legah2045/springboot-app .
 ```
@@ -47,9 +47,9 @@ mvn clean package
 ```
 
 ## Create Docker Image
-Docker is a continerization tool.Using docker we can deploy our applications as 
+Docker is a containerization tool. Using docker we can deploy our applications as 
 
-containers using docker images. Containers contains application code and also the softwares,
+containers using docker images. Containers contain application code and also the software,
 
 config files whatever is required for our application to run.
 
@@ -63,7 +63,7 @@ docker build -t legah2045/springboot-app .
 ## Deploy Application Using EKS Cluster 
 
 ```kubectl apply 
-kubectl apply -f springboot-app-deployment.yml
+kubectl apply -f spring-boot-app-deployment.yml
 ```
 
 ## List Docker Containers
@@ -71,5 +71,4 @@ kubectl apply -f springboot-app-deployment.yml
 docker ps -a
 ```
 
-## License
-[Winifred Zenabuin](https://www.linkedin.com/in/winifred-zenabuin-1b430b194/)
+
