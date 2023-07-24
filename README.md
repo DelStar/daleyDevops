@@ -24,7 +24,7 @@ I also configured github-webhook so that once the source code is modified jenkin
 # Dockerfile
 we are also using the created package (artifacts) to create a docker image for our application. Here docker is used for containerization.  
 ```docker
-docker build -t legah2045/springboot-app .
+docker build -t daleyhub/springboot-app .
 ```
 # Kubernetes Manifest files
 This files will deploy a "Spring-boot-app" with a MongoDB. Our application and database is deployed using Replicat Set, ConFigMap, Ingress Controller, Secrets, PVC, StorageClass, HPA, and Cluster-Auto-Scaling.
